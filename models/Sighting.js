@@ -19,6 +19,10 @@ var sightingSchema = new mongoose.Schema ({
   },
   confirmed: { type: Boolean, default: false },
   numberSeen: { type: Number, min: 1 }
-});
+},
+
+{timestamps:true}
+
+);
 
 module.exports = mongoose.model('Sighting', sightingSchema);
